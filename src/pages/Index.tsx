@@ -8,8 +8,13 @@ import logo from "@/assets/logo.jpeg";
 const Index = () => {
   const features = [
     {
+      icon: Plane,
+      title: "Your Gay Travel Concierge",
+      description: "Sit back and relax as we tailor your gay holiday to suit your style and needs."
+    },
+    {
       icon: Heart,
-      title: "LGBTQ+ Friendly",
+      title: "Gay Friendly Holiday",
       description: "Curated destinations verified for their welcoming atmosphere and inclusive policies."
     },
     {
@@ -18,14 +23,9 @@ const Index = () => {
       description: "From vibrant city breaks to serene beach escapes, discover places where you can truly be yourself."
     },
     {
-      icon: Plane,
-      title: "Seamless Booking",
-      description: "Book flights, hotels, and experiences all in one place with our easy-to-use platform."
-    },
-    {
       icon: Shield,
       title: "Travel with Confidence",
-      description: "Local safety guides and 24/7 support ensure you travel worry-free."
+      description: "Best in industry travel protection and 24/7 support to ensure you travel worry-free."
     }
   ];
 
@@ -60,8 +60,7 @@ const Index = () => {
                   <span className="text-gradient-rainbow">Getaway</span> Awaits
                 </h1>
                 <p className="text-lg text-muted-foreground max-w-md leading-relaxed"> 
-                  We're building something special for LGBTQ+ travellers who want to 
-                  explore freely and authentically.
+                  We're building something special for LGBTQ+ travellers who value personalised authentic holiday booking experience.
                 </p>
               </div>
 
@@ -98,7 +97,7 @@ const Index = () => {
               What's Coming
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto">
-              We're crafting an exceptional travel experience tailored for the LGBTQ+ community.
+              We're crafting an exceptional travel experience tailored for the LGBTQ+ community here in the U.K.
             </p>
           </div>
           
