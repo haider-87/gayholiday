@@ -14,7 +14,7 @@ const Index = () => {
     },
     {
       icon: Heart,
-      title: "Gay Friendly Holiday",
+      title: "Gay Friendly Holidays",
       description: "Curated destinations verified for their welcoming atmosphere and inclusive policies."
     },
     {
