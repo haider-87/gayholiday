@@ -2,108 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 /* GayHoliday.co.uk Design System
-   Warm, welcoming travel aesthetic with tasteful pride accents
+   Deep navy with bright blue globe and rainbow accents - matching the logo
 */
 
 @layer base {
   :root {
-    /* Warm, inviting palette */
-    --background: 30 50% 98%;
-    --foreground: 20 25% 15%;
+    /* Deep navy background matching logo */
+    --background: 213 55% 12%;
+    --foreground: 0 0% 100%;
 
-    --card: 30 40% 99%;
-    --card-foreground: 20 25% 15%;
+    /* Card uses slightly lighter navy */
+    --card: 213 50% 16%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 30 40% 99%;
-    --popover-foreground: 20 25% 15%;
+    --popover: 213 50% 16%;
+    --popover-foreground: 0 0% 100%;
 
-    /* Sunset coral primary */
-    --primary: 15 85% 55%;
-    --primary-foreground: 0 0% 100%;
+    /* Bright sky blue primary (globe color) */
+    --primary: 199 90% 55%;
+    --primary-foreground: 213 55% 12%;
 
-    /* Warm sand secondary */
-    --secondary: 35 40% 92%;
-    --secondary-foreground: 20 25% 25%;
+    /* Light blue secondary */
+    --secondary: 199 60% 25%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 30 30% 94%;
-    --muted-foreground: 20 15% 45%;
+    --muted: 213 40% 20%;
+    --muted-foreground: 210 20% 70%;
 
-    /* Ocean teal accent */
-    --accent: 175 60% 45%;
-    --accent-foreground: 0 0% 100%;
+    /* Teal accent */
+    --accent: 175 70% 45%;
+    --accent-foreground: 213 55% 12%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Success green */
-    --success: 150 60% 40%;
+    --success: 150 60% 45%;
 
-    --border: 30 25% 88%;
-    --input: 30 25% 88%;
-    --ring: 15 85% 55%;
+    --border: 213 40% 25%;
+    --input: 213 40% 22%;
+    --ring: 199 90% 55%;
 
     --radius: 0.75rem;
 
-    /* Rainbow gradient stops */
-    --rainbow-red: 0 85% 60%;
-    --rainbow-orange: 25 95% 55%;
-    --rainbow-yellow: 45 95% 55%;
-    --rainbow-green: 140 70% 45%;
-    --rainbow-blue: 200 80% 50%;
-    --rainbow-purple: 280 70% 55%;
+    /* Rainbow gradient stops - matching logo */
+    --rainbow-red: 0 80% 55%;
+    --rainbow-orange: 30 95% 55%;
+    --rainbow-yellow: 50 95% 55%;
+    --rainbow-green: 120 70% 45%;
+    --rainbow-blue: 200 80% 55%;
+    --rainbow-purple: 270 70% 60%;
 
-    --sidebar-background: 30 50% 98%;
-    --sidebar-foreground: 20 25% 25%;
-    --sidebar-primary: 15 85% 55%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 35 40% 92%;
-    --sidebar-accent-foreground: 20 25% 25%;
-    --sidebar-border: 30 25% 88%;
-    --sidebar-ring: 15 85% 55%;
+    --sidebar-background: 213 55% 12%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 199 90% 55%;
+    --sidebar-primary-foreground: 213 55% 12%;
+    --sidebar-accent: 213 40% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 213 40% 25%;
+    --sidebar-ring: 199 90% 55%;
   }
 
   .dark {
-    --background: 20 25% 8%;
-    --foreground: 30 30% 95%;
-
-    --card: 20 25% 12%;
-    --card-foreground: 30 30% 95%;
-
-    --popover: 20 25% 12%;
-    --popover-foreground: 30 30% 95%;
-
-    --primary: 15 85% 55%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 20 20% 18%;
-    --secondary-foreground: 30 30% 90%;
-
-    --muted: 20 20% 18%;
-    --muted-foreground: 30 20% 60%;
-
-    --accent: 175 60% 45%;
-    --accent-foreground: 0 0% 100%;
-
+    --background: 213 55% 12%;
+    --foreground: 0 0% 100%;
+    --card: 213 50% 16%;
+    --card-foreground: 0 0% 100%;
+    --popover: 213 50% 16%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 199 90% 55%;
+    --primary-foreground: 213 55% 12%;
+    --secondary: 199 60% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 213 40% 20%;
+    --muted-foreground: 210 20% 70%;
+    --accent: 175 70% 45%;
+    --accent-foreground: 213 55% 12%;
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
-
-    --success: 150 60% 40%;
-
-    --border: 20 20% 20%;
-    --input: 20 20% 20%;
-    --ring: 15 85% 55%;
-
-    --sidebar-background: 20 25% 10%;
-    --sidebar-foreground: 30 30% 90%;
-    --sidebar-primary: 15 85% 55%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 20 20% 18%;
-    --sidebar-accent-foreground: 30 30% 90%;
-    --sidebar-border: 20 20% 20%;
-    --sidebar-ring: 15 85% 55%;
+    --success: 150 60% 45%;
+    --border: 213 40% 25%;
+    --input: 213 40% 22%;
+    --ring: 199 90% 55%;
+    --sidebar-background: 213 55% 12%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 199 90% 55%;
+    --sidebar-primary-foreground: 213 55% 12%;
+    --sidebar-accent: 213 40% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 213 40% 25%;
+    --sidebar-ring: 199 90% 55%;
   }
 }
 
@@ -115,15 +106,11 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
-  }
 }
 
 @layer utilities {
   .bg-gradient-primary {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(25, 90%, 55%) 100%);
+    background: linear-gradient(135deg, hsl(199, 90%, 55%) 0%, hsl(199, 85%, 45%) 100%);
   }
 
   .bg-gradient-rainbow {
@@ -154,10 +141,16 @@
   }
 
   .shadow-glow {
-    box-shadow: 0 4px 20px -2px hsl(var(--primary) / 0.4);
+    box-shadow: 0 4px 25px -2px hsl(199, 90%, 55%, 0.5);
+  }
+
+  .shadow-glow-rainbow {
+    box-shadow: 
+      0 4px 20px -2px hsl(var(--rainbow-red) / 0.3),
+      0 4px 40px -4px hsl(var(--rainbow-blue) / 0.3);
   }
 
   .shadow-soft {
-    box-shadow: 0 4px 30px -4px hsl(var(--foreground) / 0.1);
+    box-shadow: 0 4px 30px -4px hsl(0, 0%, 0%, 0.4);
   }
 }
