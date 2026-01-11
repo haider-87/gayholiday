@@ -8,8 +8,20 @@ const WaitlistForm = () => {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const date = new Date();
+  const inputValue: {[key:string]:string} = {
+      'Email': email,
+      'Created At': date.toLocaleString(),
+    }
+  
+  const APP_ID = 'AKfycbyMw2aqxEK9CM3Lmg2mU4uKvCSzH2ixvCt77DXnX7mmlc19Xlt8yEaRw3Q36JxyPWd9RQ'
+  const baseURL = `https://script.google.com/macros/s/${APP_ID}/exec`
+  const formData = new FormData()
+    Object.keys(inputValue).forEach((key) => {
+      formData.append(key, inputValue[key])
+    })
+  
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -19,12 +31,26 @@ const WaitlistForm = () => {
 
     setIsLoading(true);
     
+    try {
+       const res = await fetch(baseURL, {
+        method: 'POST',
+        body: formData,
+       })
+      if(res.ok){
+        console.log('Request was successful:', res);
+      }else{
+        console.log('Request Failed:', res);        
+      }
+    }catch(e){
+      console.error('Error during fetch:', e);
+    }
+
     // Simulate submission
     setTimeout(() => {
       setIsSubmitted(true);
       setIsLoading(false);
       toast.success("You're on the list! We'll be in touch soon.");
-    }, 1000);
+    }, 500);
   };
 
   if (isSubmitted) {
