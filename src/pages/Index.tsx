@@ -59,9 +59,8 @@ const Index = () => {
                   <br />
                   <span className="text-gradient-rainbow">Getaway</span> Awaits
                 </h1>
-                <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-                  Discover LGBTQ+ friendly destinations around the world. 
-                  We're building something special for travellers who want to 
+                <p className="text-lg text-muted-foreground max-w-md leading-relaxed"> 
+                  We're building something special for LGBTQ+ travellers who want to 
                   explore freely and authentically.
                 </p>
               </div>
@@ -72,7 +71,7 @@ const Index = () => {
                 </p>
                 <WaitlistForm />
                 <p className="text-xs text-muted-foreground">
-                  Join 500+ travellers already on the list. No spam, ever.
+                  Join 130+ travellers already on the list. No spam, ever.
                 </p>
               </div>
             </div>

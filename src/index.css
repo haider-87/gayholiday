@@ -11,7 +11,7 @@
 @layer base {
   :root {
     /* Deep navy background matching logo */
-    --background: 213 55% 12%;
+    --background: 216 65% 14%;
     --foreground: 0 0% 100%;
 
     /* Card uses slightly lighter navy */
