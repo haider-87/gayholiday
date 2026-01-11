@@ -10,7 +10,7 @@ const Index = () => {
     {
       icon: Plane,
       title: "Your Gay Travel Concierge",
-      description: "Sit back and relax as we tailor your gay holiday to suit your style and needs."
+      description: "Sit back and relax as we tailor your gay holiday to suit your individual style and needs."
     },
     {
       icon: Heart,
@@ -30,7 +30,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="we3q24 min-h-screen flex flex-col">
       <RainbowBar />
       
       {/* Header */}
