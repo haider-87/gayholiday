@@ -50,13 +50,13 @@ const WaitlistForm = () => {
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="pl-10 h-12 bg-white/80 backdrop-blur-sm border-border/50 focus:border-primary focus:ring-primary/20"
+          className="pl-10 h-12 bg-card/80 backdrop-blur-sm border-border focus:border-primary focus:ring-primary/20 text-foreground placeholder:text-muted-foreground"
         />
       </div>
       <Button 
         type="submit" 
         disabled={isLoading}
-        className="h-12 px-8 bg-gradient-primary hover:opacity-90 transition-opacity text-white font-semibold shadow-glow"
+        className="h-12 px-8 bg-gradient-rainbow hover:opacity-90 transition-opacity text-foreground font-semibold shadow-glow-rainbow"
       >
         {isLoading ? "Joining..." : "Join Waitlist"}
       </Button>

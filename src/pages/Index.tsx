@@ -3,6 +3,7 @@ import WaitlistForm from "@/components/WaitlistForm";
 import FeatureCard from "@/components/FeatureCard";
 import RainbowBar from "@/components/RainbowBar";
 import heroImage from "@/assets/hero-beach.jpg";
+import logo from "@/assets/logo.jpeg";
 
 const Index = () => {
   const features = [
@@ -35,13 +36,12 @@ const Index = () => {
       {/* Header */}
       <header className="container py-6">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-2xl font-display font-bold text-foreground">
-              Gay<span className="text-gradient-rainbow">Holiday</span>
-            </span>
-            <span className="text-xs font-medium text-muted-foreground">.co.uk</span>
-          </div>
-          <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
+          <img 
+            src={logo} 
+            alt="GayHoliday.co.uk" 
+            className="h-12 sm:h-14 w-auto object-contain"
+          />
+          <span className="px-3 py-1.5 text-xs font-semibold bg-primary/20 text-primary border border-primary/30 rounded-full">
             Coming Soon
           </span>
         </div>
@@ -54,7 +54,7 @@ const Index = () => {
             {/* Left Content */}
             <div className="space-y-8 animate-fade-in-up">
               <div className="space-y-4">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                   Your Perfect
                   <br />
                   <span className="text-gradient-rainbow">Getaway</span> Awaits
@@ -79,14 +79,14 @@ const Index = () => {
 
             {/* Right Image */}
             <div className="relative animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <div className="absolute -inset-4 bg-gradient-rainbow opacity-20 blur-3xl rounded-3xl" />
-              <div className="relative rounded-3xl overflow-hidden shadow-soft">
+              <div className="absolute -inset-4 bg-gradient-rainbow opacity-30 blur-3xl rounded-3xl" />
+              <div className="relative rounded-3xl overflow-hidden shadow-glow-rainbow border border-primary/20">
                 <img 
                   src={heroImage} 
                   alt="Beautiful Mediterranean beach at sunset" 
                   className="w-full h-[400px] lg:h-[500px] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ const Index = () => {
         {/* Features Section */}
         <section className="container py-16 lg:py-24">
           <div className="text-center mb-12 space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
               What's Coming
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto">
@@ -121,13 +121,15 @@ const Index = () => {
       <footer className="border-t border-border">
         <div className="container py-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-muted-foreground">
-              © 2026 GayHoliday.co.uk. All rights reserved.
-            </p>
+            <img 
+              src={logo} 
+              alt="GayHoliday.co.uk" 
+              className="h-8 w-auto object-contain opacity-80"
+            />
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
-              <a href="#" className="hover:text-foreground transition-colors">Terms</a>
-              <a href="#" className="hover:text-foreground transition-colors">Contact</a>
+              <a href="#" className="hover:text-primary transition-colors">Privacy</a>
+              <a href="#" className="hover:text-primary transition-colors">Terms</a>
+              <a href="#" className="hover:text-primary transition-colors">Contact</a>
             </div>
           </div>
         </div>
