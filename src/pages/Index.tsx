@@ -39,7 +39,7 @@ const Index = () => {
           <img 
             src={logo} 
             alt="GayHoliday.co.uk" 
-            className="h-12 sm:h-14 w-auto object-contain"
+            className="h-16 sm:h-20 w-auto object-contain"
           />
           <span className="px-3 py-1.5 text-xs font-semibold bg-primary/20 text-primary border border-primary/30 rounded-full">
             Coming Soon
